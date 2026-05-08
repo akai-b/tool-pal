@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.youngju.dev)",
+      "WebFetch(domain:electron-vite.org)",
+      "WebFetch(domain:generalistprogrammer.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(pnpm install *)",
+      "Bash(curl -s \"https://registry.npmjs.org/tailwindcss/latest\")"
+    ]
+  }
+}
