@@ -63,7 +63,7 @@ packages/      # Shared libraries and business logic
 
 **Packages export TypeScript source directly** (`main: ./src/index.ts`) — no per-package build step. Vite in each consuming app handles transpilation. Path aliases for all `@pal/*` packages are declared in the root `tsconfig.json` and repeated in each app's `vite.config.ts`.
 
-**Tailwind CSS v4** via `@tailwindcss/vite` plugin — no `tailwind.config.js` needed.
+**UnoCSS** via `unocss/vite` plugin — configuration in root `uno.config.ts`.
 
 ## Electron IPC
 
