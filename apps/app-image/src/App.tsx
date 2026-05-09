@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { ImageCompressTool, ImageConvertTool } from '@pal/tool-image'
+import { GifMakerTool } from '@pal/tool-gif-maker'
 
-type Tab = 'compress' | 'convert'
+type Tab = 'compress' | 'convert' | 'gif-maker'
 
 const TABS: { id: Tab; label: string }[] = [
-  { id: 'compress', label: '图片压缩' },
-  { id: 'convert',  label: '图片转换' },
+  { id: 'compress',  label: '图片压缩' },
+  { id: 'convert',   label: '图片转换' },
+  { id: 'gif-maker', label: 'GIF 制作' },
 ]
 
 export function App() {
@@ -34,8 +36,9 @@ export function App() {
 
       {/* Content */}
       <main className="flex-1 overflow-auto">
-        {tab === 'compress' && <ImageCompressTool />}
-        {tab === 'convert'  && <ImageConvertTool />}
+        {tab === 'compress'  && <ImageCompressTool />}
+        {tab === 'convert'   && <ImageConvertTool />}
+        {tab === 'gif-maker' && <GifMakerTool />}
       </main>
     </div>
   )

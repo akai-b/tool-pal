@@ -5,11 +5,9 @@
     "dev:all-in-one": "pnpm --filter app-all-in-one dev",
     "dev:image": "pnpm --filter app-image dev",
     "dev:font-compress": "pnpm --filter app-font-compress dev",
-    "dev:gif-maker": "pnpm --filter app-gif-maker dev",
     "electron:all-in-one": "pnpm --filter app-all-in-one electron:dev",
     "electron:image": "pnpm --filter app-image electron:dev",
     "electron:font-compress": "pnpm --filter app-font-compress electron:dev",
-    "electron:gif-maker": "pnpm --filter app-gif-maker electron:dev",
     "build": "turbo build",
     "typecheck": "turbo typecheck",
     "lint": "turbo lint"
@@ -23,5 +21,6 @@
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
-  }
+  },
+  "packageManager": "pnpm@9.15.9"
 }

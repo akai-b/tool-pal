@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Language / 语言要求
+
+**IMPORTANT: Always communicate, explain, and output content in Chinese (zh-CN).**
+**重要：请始终使用中文（zh-CN）与我对话，任何解释、回答和输出的内容都必须使用中文。**
+
 ## Commands
 
 All commands run from the repo root with `pnpm`.
@@ -9,9 +14,8 @@ All commands run from the repo root with `pnpm`.
 ### Dev (browser/Vite only)
 ```bash
 pnpm dev:all-in-one         # all-in-one app on :5173
-pnpm dev:image              # standalone image tool (compress + convert) on :5174
+pnpm dev:image              # standalone image tool (compress + convert + GIF maker) on :5174
 pnpm dev:font-compress      # standalone font compress
-pnpm dev:gif-maker          # standalone GIF maker on :5177
 ```
 
 ### Dev (full Electron desktop)
@@ -19,7 +23,6 @@ pnpm dev:gif-maker          # standalone GIF maker on :5177
 pnpm electron:all-in-one
 pnpm electron:image
 pnpm electron:font-compress
-pnpm electron:gif-maker
 ```
 
 ### Build / Type-check / Lint
@@ -44,9 +47,8 @@ No test suite is configured.
 ```
 apps/          # Electron + Vite containers
   app-all-in-one/         # Sidebar nav aggregating all tools (primary distributable)
-  app-image/              # Standalone image tool: tab nav for compress + convert
+  app-image/              # Standalone image tool: tab nav for compress + convert + GIF maker
   app-font-compress/
-  app-gif-maker/
 
 packages/      # Shared libraries and business logic
   ui/            # @pal/ui       — shared React components (Button, DropZone, FileList, ProgressBar, ToolLayout)

@@ -7,7 +7,9 @@
       "WebFetch(domain:generalistprogrammer.com)",
       "WebFetch(domain:github.com)",
       "Bash(pnpm install *)",
-      "Bash(curl -s \"https://registry.npmjs.org/tailwindcss/latest\")"
+      "Bash(curl -s \"https://registry.npmjs.org/tailwindcss/latest\")",
+      "Bash(pnpm list *)",
+      "WebFetch(domain:stackoverflow.com)"
     ]
   }
 }

@@ -15,6 +15,7 @@
     "@pal/utils": "workspace:*",
     "@pal/ipc-types": "workspace:*",
     "@pal/tool-image": "workspace:*",
+    "@pal/tool-gif-maker": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
